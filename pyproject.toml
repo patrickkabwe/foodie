@@ -6,7 +6,7 @@ authors = ["Patrick Kabwe <patrickckabwe@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 strawberry-graphql = { extras = ["fastapi"], version = "^0.214.0" }
 uvicorn = { extras = ["standard"], version = "^0.24.0.post1" }
 motor = "^3.3.2"
