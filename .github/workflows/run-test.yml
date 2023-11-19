@@ -38,7 +38,7 @@ jobs:
 
       - name: Lint with black
         run: |
-          poetry install black
+          poetry add black
           poetry run black --check .
 
       - name: Test with pytest
