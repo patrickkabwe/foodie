@@ -54,4 +54,4 @@ jobs:
       - name: Test with pytest
         run: |
           source .venv/bin/activate
-          make test
+          pytest -s --cov=app --cov-fail-under=90 --cov-config=.coveragerc --cov-report=term-missing --cov-report=xml tests/
