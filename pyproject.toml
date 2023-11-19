@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "foodie"
+version = "0.1.0"
+description = ""
+authors = ["Patrick Kabwe <patrickckabwe@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+strawberry-graphql = { extras = ["fastapi"], version = "^0.214.0" }
+uvicorn = { extras = ["standard"], version = "^0.24.0.post1" }
+motor = "^3.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+coverage = "^7.3.2"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
